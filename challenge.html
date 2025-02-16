@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Challenge Submissions</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Challenge <span id="challenge-number"></span></h1>
+            <div class="logo">OpenMinds Club</div>
+        </header>
+
+        <main>
+            <div class="submissions" id="submission-list"></div>
+            <button id="add-submission" class="add-button">+</button>
+        </main>
+
+        <div id="submission-form" class="modal">
+            <div class="modal-content">
+                <h2>Add a Submission</h2>
+                <input type="text" id="name" placeholder="Name">
+                <input type="text" id="firstname" placeholder="First name">
+                <input type="url" id="link"placeholder="Challenge Link">
+                <button onclick="saveSubmission()">Submit</button>
+                <button onclick="closeForm()">Cancel</button>
+            </div>
+        </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

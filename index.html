@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Show Your Work</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Show Your Work</h1>
+            <div class="logo">OpenMinds Club</div>
+        </header>
+
+        <main>
+            <h2>Web Dev challenges</h2>
+            <div class="challenges">
+                <button onclick="openChallenge(1)">Challenge 1</button>
+                <button onclick="openChallenge(2)">Challenge 2</button>
+                <button onclick="openChallenge(3)">Challenge 3</button>
+            </div>
+        </main>
+
+    <script>
+        function openChallenge(number) {
+            window.location.href = `challenge.html?challenge=${number}`;
+        }
+    </script>
+    
+</body>
+</html>
