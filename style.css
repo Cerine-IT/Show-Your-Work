@@ -92,7 +92,7 @@ h1, h2 {
     transform: scale(1.1);
 }
 
-/* Formulaire de soumission 
+/* Formulaire de soumission */
 .modal {
     display: none;
     position: fixed;
@@ -136,7 +136,7 @@ h1, h2 {
 
 .modal button:hover {
     background: #ff9900;
-}*/
+}
 
 /* Masquer le formulaire par défaut */
 .modal {
