@@ -3,33 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Challenge Submissions</title>
+    <title>Challenge</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
     <header>
-        <h1>Challenge <span id="challenge-number"></span></h1>
-        <div class="logo">OpenMinds Club</div>
+        <img src="logo.png" alt="OpenMinds Club Logo" class="logo">
+        <button id="back-btn" onclick="window.location.href='index.html'">Back</button>
     </header>
-
     <main>
-        <div class="submissions" id="submission-list"></div>
-        <button id="add-submission" class="add-button">+</button>
+        <h1 id="challenge-title">Challenge</h1>
+        <div class="cards-container" id="cards-container"></div>
     </main>
-
-    <!-- Formulaire de soumission -->
-    <div id="submission-form" class="modal">
-        <div class="modal-content">
-            <h2>Add a Submission</h2>
-            <input type="text" id="name" placeholder="Name">
-            <input type="text" id="firstname" placeholder="First name">
-            <input type="url" id="link" placeholder="Challenge Link">
-            <button id="submit-btn">Submit</button>
-            <button id="cancel-button" class="cancel-button">Cancel</button>
-        </div>
+     <footer>
+    <div class="social-media">
+        <h3>AUTHOR OF VIDEOS</h3>
+        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok">
+            <i class="fab fa-tiktok"></i>
+        </a>
     </div>
-
+</footer>
+    <script src="data.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
