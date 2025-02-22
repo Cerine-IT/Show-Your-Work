@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Show Your Work</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <body>
-        <header>
-            <h1>Show Your Work</h1>
-            <div class="logo">OpenMinds Club</div>
-        </header>
-
-        <main>
-            <h2>Web Dev challenges</h2>
-            <div class="challenges">
-                <button onclick="openChallenge(1)">Challenge 1</button>
-                <button onclick="openChallenge(2)">Challenge 2</button>
-                <button onclick="openChallenge(3)">Challenge 3</button>
-                <button onclick="openChallenge(4)">Challenge 4</button>
-            </div>
-        </main>
-
-    <script>
-        function openChallenge(number) {
-            window.location.href = `challenge.html?challenge=${number}`;
-        }
-    </script>
-    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Your Work</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="OpenMinds Club Logo" class="logo">
+        <button id="about-btn" onclick="window.location.href='about.html'">About OpenMinds Club</button>
+    </header>
+    <main>
+        <h1>Show Your Work</h1>
+        <div class="challenges">
+            <button class="challenge-btn" onclick="window.location.href='challenge.html?challenge=1'">Challenge 1</button>
+            <button class="challenge-btn" onclick="window.location.href='challenge.html?challenge=2'">Challenge 2</button>
+            <button class="challenge-btn" onclick="window.location.href='challenge.html?challenge=3'">Challenge 3</button>
+        </div>
+    </main>
+     <footer>
+    <div class="social-media">
+        <h3>AUTHOR OF VIDEOS</h3>
+        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok">
+            <i class="fab fa-tiktok"></i>
+        </a>
+    </div>
+</footer>
+    <script src="script.js"></script>
 </body>
 </html>
