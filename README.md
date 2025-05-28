@@ -30,10 +30,7 @@ show-your-work/
 
 
 ## Setup
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Cerine-IT/Show-Your-Work.git
+Open this link in your browser: https://cerine-it.github.io/Show-Your-Work/
 
 ## How It Works
 1. Members submit their project URLs to be added to data.js
